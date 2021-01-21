@@ -726,7 +726,7 @@ export default class calc extends Component {
       <div>
         <Container className={`border themed-container ${styles.calcContainer}`}>
           <Row>
-            <Col xl={8} lg={8} md={7} sm={12} xs={12}>
+            <Col xl={8} lg={8} md={7} sm={12} xs={12} className={`${styles.rightCol}`}>
               <Form className={`${styles.formContainer}`}>
                 <Form.Group controlId="formCalcPPPContainer" className={`${styles.formGroupLeftContainer}`}>
                   <Form.Label className={`${styles.formCalcPPPContainerLabel}`}>
