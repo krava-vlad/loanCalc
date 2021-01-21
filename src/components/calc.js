@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Container, Row, Col, Form, Button, Card, Media } from 'react-bootstrap';
 import CurrencyInput from 'react-currency-input-field';
 import styles from './calc.module.scss';
+import dollarImg from '../assets/images/dollar-bag.png';
 
 export default class calc extends Component {
   constructor(props){
@@ -855,8 +856,9 @@ export default class calc extends Component {
               <Form className={`${styles.formContainer}`}>
                 <Form.Group controlId="calcPPPContainer" className="text-center">
                   <img 
-                    src="https://creditera-assets.s3-us-west-2.amazonaws.com/design-assets/icons/logged-out/moneyBag.svg" 
+                    src={dollarImg} 
                     alt="Illustration of a bag of money" 
+                    style={{width: 200, height: 200}}
                   />
                   <Form.Group>
                     <Form.Label className={`${styles.formCalcPPPContainerLabel}`}>
@@ -865,7 +867,7 @@ export default class calc extends Component {
                   </Form.Group>
                   <Form.Group>
                     <Form.Label className={`${styles.amount}`}>
-                      $- {amount}
+                      ${amount}
                     </Form.Label>
                   </Form.Group>
                   <Card>
