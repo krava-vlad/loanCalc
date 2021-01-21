@@ -1,7 +1,17 @@
+@font-face {
+  font-family: Averta;
+  src: url('./assets/fonts/AvertaDemoPE-Regular.ttf');
+}
+
+@font-face {
+  font-family: PostGrotesk;
+  src: url('./assets/fonts/Grotesk\ Medium.ttf');
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Averta',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Helvetica',
     sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

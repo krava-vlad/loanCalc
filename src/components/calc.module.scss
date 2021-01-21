@@ -20,12 +20,88 @@
 
 .formCalcPPPContainerLabel {
   font-family: Averta, Helvetica, sans-serif;
+  font-size: 1.5em !important;
+  font-weight: bold;
 }
 
 .leftCol {
   background-color: rgb(242, 248, 255);
 }
 
-.rightCol{
+.rightCol {
   background-color: #fff
+}
+
+.amount {
+  font-size: 36px;
+  font-weight: bold;
+  color: rgb(145, 148, 153);
+  font-family: Roboto, Helvetica, sans-serif;
+}
+
+.button {
+  padding: 13px 40px 12px;
+  border-color: #5ebd70;
+  background-color: #5ebd70;
+  border-radius: 220px;
+}
+
+.buttonText {
+  font-size: 21px;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.alertText {
+  color: #ff0000;
+}
+
+.findMore{
+  display: flex !important;
+}
+
+.svgContainer{
+  margin-top: -5px;
+}
+
+.findMoreContainer{
+  background-color: rgb(242, 248, 255);
+  padding: 20px 50px;
+  color: rgb(6, 20, 42);
+  font-family: Averta, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 5px;
+}
+
+.labelText {
+  color: rgb(6, 20, 42);
+  font-family: Averta, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.cardTitleText {
+  font-size: 24px;
+  font-family: PostGrotesk,Helvetica,Arial;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #06142a;
+}
+
+.cardBodyText{
+  font-family: PostGrotesk,Helvetica,Arial;
+  font-weight: 100;
+  line-height: 1.5;
+  // color: #06142a;
+  font-size: 14px;
+}
+
+.svgMediaContainer {
+  position: absolute;
+  left: 60px;
+  svg {
+    fill: rgb(102, 168, 252);
+  }
 }
