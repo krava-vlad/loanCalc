@@ -407,6 +407,7 @@ export default class calc extends Component {
               value="PPPFunds2020Yes"
               checked={recievedPPPFunds2020 === 'PPPFunds2020Yes'}
               onChange={this.handleFormPPPFunds2020}
+              className={`${styles.radioText}`}
             />
           </Col>
           <Col>
@@ -418,6 +419,7 @@ export default class calc extends Component {
               value="PPPFunds2020No"
               checked={recievedPPPFunds2020 === 'PPPFunds2020No'}
               onChange={this.handleFormPPPFunds2020}
+              className={`${styles.radioText}`}
             />
           </Col>
         </Row>
