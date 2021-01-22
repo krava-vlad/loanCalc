@@ -72,10 +72,14 @@
   font-family: Averta, Helvetica, sans-serif;
   font-weight: 400;
   display: flex !important;
+  font-size: 14px;
 }
 
 .svgContainer{
   margin-top: -5px;
+  svg {
+    fill: #5ebd70;
+  }
 }
 
 .findMoreContainer{
@@ -112,7 +116,7 @@
 
 .svgMediaContainer {
   position: absolute;
-  left: 60px;
+  left: 50px;
   svg {
     fill: #5ebd70;
   }
