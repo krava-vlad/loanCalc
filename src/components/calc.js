@@ -50,6 +50,7 @@ export default class calc extends Component {
       isInBussinessFeb2020,
       isSeasonalBusiness,
       isQuater2019,
+      isFoodHospitalityIndustry,
       totalPayroll,
       totalPayroll1,
       totalPayroll2,
@@ -60,10 +61,10 @@ export default class calc extends Component {
     if (recievedPPPFunds2020 === 'PPPFunds2020Yes'){
       if (isInBussinessFeb2020 === 'BussinessFeb2020Yes') {
         if (isQuater2019 === 'Quater2019Yes') {
-          if (isSeasonalBusiness === 'SeasonalBusinessYes') {
+          if (isFoodHospitalityIndustry === 'FoodHospitalityIndustryYes') {
             dispAmount = (new Intl.NumberFormat().format((Math.round(totalPayroll * 3.5)))).toString();
             this.setState({amount: dispAmount})
-          } else if (isSeasonalBusiness === 'SeasonalBusinessNo') {
+          } else if (isFoodHospitalityIndustry === 'FoodHospitalityIndustryNo') {
             dispAmount = (new Intl.NumberFormat().format((Math.round(totalPayroll * 2.5)))).toString();
             this.setState({amount: dispAmount})
           }
@@ -100,7 +101,7 @@ export default class calc extends Component {
   };
 
   getStarted = () => {
-    window.open('https://www.smartbizloans.com/apply?partner_id=nav&sb_apply_form=paycheck_protection&promo_code=ref_11', '_blank');
+    window.open('https://www.smartbizloans.com/apply?partner_id=bizboostsocial&sb_apply_form=paycheck_protection', '_blank');
     window.fbq('track', 'PageView');
   };
 
@@ -249,7 +250,7 @@ export default class calc extends Component {
         className={`${styles.formGroupLeftContainer}`}
       >
         <Form.Label className={`text-muted ${styles.labelText}`}>
-          What were your total payroll costs in the last 12 months? 
+          What were your total payroll costs in the last 12 months or all of 2019? 
         </Form.Label>
         <CurrencyInput
           id="amount1"
@@ -882,10 +883,7 @@ export default class calc extends Component {
 
     return (
       <div>
-        <Container 
-          className={`border themed-container 
-          ${styles.calcContainer}`}
-        >
+        <Container className={`border ${styles.calcContainer}`}>
           <Row>
             <Col 
               xl={7} 
