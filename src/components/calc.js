@@ -101,6 +101,7 @@ export default class calc extends Component {
 
   getStarted = () => {
     window.open('https://www.smartbizloans.com/apply?partner_id=nav&sb_apply_form=paycheck_protection&promo_code=ref_11', '_blank');
+    window.fbq('track', 'PageView');
   };
 
   validateValue = (value, type='totalPayroll') => {
@@ -172,7 +173,10 @@ export default class calc extends Component {
           </Col>
         </Row>
       </Form.Group>
-      <Form.Group controlId="formBussinessFeb2020" className={`${styles.formGroupLeftContainer}`}>
+      <Form.Group 
+        controlId="formBussinessFeb2020" 
+        className={`${styles.formGroupLeftContainer}`}
+      >
         <Form.Label className={`text-muted ${styles.labelText}`}>
           Were you in business February 15, 2020?
         </Form.Label>
@@ -203,7 +207,10 @@ export default class calc extends Component {
           </Col>
         </Row>
       </Form.Group>
-      <Form.Group controlId="formSeasonalBusiness" className={`${styles.formGroupLeftContainer}`}>
+      <Form.Group 
+        controlId="formSeasonalBusiness" 
+        className={`${styles.formGroupLeftContainer}`}
+      >
         <Form.Label className={`text-muted ${styles.labelText}`}>
           Are you a seasonal business?
         </Form.Label>
@@ -234,7 +241,10 @@ export default class calc extends Component {
           </Col>
         </Row>
       </Form.Group>
-      <Form.Group controlId="formAmount" className={`${styles.formGroupLeftContainer}`}>
+      <Form.Group 
+        controlId="formAmount" 
+        className={`${styles.formGroupLeftContainer}`}
+      >
         <Form.Label className={`text-muted ${styles.labelText}`}>
           What were your total payroll costs in the last 12 months? 
         </Form.Label>
