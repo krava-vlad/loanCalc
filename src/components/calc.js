@@ -92,12 +92,16 @@ export default class calc extends Component {
         this.setState({amount: dispAmount});
       }
     }
-  }
+  };
 
   onShowFindMore = () => {
     const {findMore} = this.state;
     this.setState({findMore: !findMore});
-  }
+  };
+
+  getStarted = () => {
+    window.open('https://www.smartbizloans.com/apply?partner_id=nav&sb_apply_form=paycheck_protection&promo_code=ref_11', '_blank');
+  };
 
   validateValue = (value, type='totalPayroll') => {
     const rawValue = value === undefined ? 'undefined' : value;
@@ -904,11 +908,18 @@ export default class calc extends Component {
                   </Form.Group>
                   <Card>
                     <Card.Body>
-                      <Card.Title className={`${styles.cardTitleText}`}>Paycheck Protection Program (PPP)</Card.Title>
+                      <Card.Title className={`${styles.cardTitleText}`}>
+                        Paycheck Protection Program (PPP)
+                      </Card.Title>
                       <Card.Text className={`${styles.cardBodyText}`}>
                         Complete your PPP application in 15 minutes or less with one of Nav’s trusted partners.
                       </Card.Text>
-                      <Button variant="success" size='lg' className={`${styles.button}`}>
+                      <Button 
+                        variant="success" 
+                        size='lg' 
+                        className={`${styles.button}`} 
+                        onClick={this.getStarted}
+                      >
                         <div className={`${styles.buttonText}`}>
                           Get Started
                         </div>
