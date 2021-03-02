@@ -101,7 +101,7 @@ export default class calc extends Component {
   };
 
   getStarted = () => {
-    window.open('https://www.smartbizloans.com/apply?partner_id=bizboostsocial&sb_apply_form=paycheck_protection&promo_code=bizboostsocial2', '_blank');
+    window.open('https://www.smartbizloans.com/apply?partner_id=bizboostsocial&sb_apply_form=paycheck_protection&promo_code=bizboostsocial', '_blank');
     window.fbq('track', 'PageView');
   };
 
