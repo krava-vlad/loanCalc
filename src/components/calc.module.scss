@@ -46,12 +46,19 @@
   font-family: Averta, Helvetica, sans-serif;
 }
 
-.button {
+.calcButton {
+  padding: 13px 20px 12px;
+  border-color: #5ebd70;
+  border-radius: 220px;
+}
+
+.getStartedButton {
   padding: 13px 20px 12px;
   border-color: #5ebd70;
   background-color: #5ebd70;
   border-radius: 220px;
 }
+
 
 .buttonText {
   font-family: Lato, Helvetica, sans-serif;
