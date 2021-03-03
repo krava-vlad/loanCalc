@@ -926,12 +926,12 @@ export default class calc extends Component {
                   </Form.Text>
                 </Form.Group>
                 <Form.Group className="text-center">
-                  <Button 
-                    variant="success" 
-                    size='lg' 
-                    className={`${styles.button}`}
-                    onClick={this.onCalc}
-                  >
+                    <Button 
+                      variant="outline-success" 
+                      size='lg' 
+                      className={`${styles.calcButton}`}
+                      onClick={this.onCalc}
+                    >
                     <div className={`${styles.buttonText}`}>
                       Calculate
                     </div>
@@ -1022,12 +1022,12 @@ export default class calc extends Component {
                         Paycheck Protection Program (PPP)
                       </Card.Title>
                       <Card.Text className={`${styles.cardBodyText}`}>
-                        Complete your PPP application in 15 minutes or less with one of Nav’s trusted partners.
+                        Complete your PPP application in 15 minutes or less.
                       </Card.Text>
                       <Button 
                         variant="success" 
                         size='lg' 
-                        className={`${styles.button}`} 
+                        className={`${styles.getStartedButton}`} 
                         onClick={this.getStarted}
                       >
                         <div className={`${styles.buttonText}`}>
