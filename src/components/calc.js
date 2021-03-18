@@ -956,14 +956,14 @@ export default class calc extends Component {
                         Payment for vacation, parental, family, medical, or sick leave; Allowance for dismissal or separation; 
                         Payment required for the provisions of group health care benefits, including insurance premiums; 
                         Payment of any retirement benefit; Payment of State or local tax assessed on the compensation of employees; 
-                        plus the sum of payments of any compensation or income that is a wage, commission, income, net earnings 
+                        plus the sum of payments of any compensation or income that is a wage, commission, income, gross earnings 
                         from self-employment, or similar compensation and that is in an amount that is not more than $100,000 in 1 year, 
                         as prorated for the covered period.
                       </p>
 
                       <p>
                         Self employed individuals (including independent contractors) who file IRS Form 1040 Schedule C with 
-                        no employees should enter their net profit from their 2019 Schedule C (line 31).
+                        no employees should enter their gross profit from their 2019 Schedule C (line 7).
                       </p>
                       
                       <p><b>Payroll costs exclude:</b> compensation of an individual person in excess of $100,000 (as prorated for the period); 
@@ -974,7 +974,7 @@ export default class calc extends Component {
                       </p>
 
                       <p><b>Self-employment:</b> Self employed individuals (including independent contractors) who file IRS Form 1040 Schedule 
-                        C with no employees should enter their net profit from their 2019 Schedule C line 31 as payroll. 
+                        C with no employees should enter their gross profit from their 2019 Schedule C line 7 as payroll. 
                         (The 2019 tax return does not have to be filed, but it must be completed to complete this calculation.)
                       </p>
 
