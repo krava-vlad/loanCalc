@@ -963,7 +963,7 @@ export default class calc extends Component {
 
                       <p>
                         Self employed individuals (including independent contractors) who file IRS Form 1040 Schedule C with 
-                        no employees should enter their net profit from their 2019 Schedule C (line 31).
+                        no employees should enter their gross profit from their 2019 Schedule C (line 7).
                       </p>
                       
                       <p><b>Payroll costs exclude:</b> compensation of an individual person in excess of $100,000 (as prorated for the period); 
@@ -974,7 +974,7 @@ export default class calc extends Component {
                       </p>
 
                       <p><b>Self-employment:</b> Self employed individuals (including independent contractors) who file IRS Form 1040 Schedule 
-                        C with no employees should enter their net profit from their 2019 Schedule C line 31 as payroll. 
+                        C with no employees should enter their gross profit from their 2019 Schedule C line 7 as payroll. 
                         (The 2019 tax return does not have to be filed, but it must be completed to complete this calculation.)
                       </p>
 
